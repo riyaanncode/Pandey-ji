@@ -22,6 +22,7 @@ const Skills = () => {
                   width="20px"
                   height="20px"
                   className="img-con"
+                  alt="no-img"
                 />
                 <h4>HTML</h4>
               </span>
@@ -31,6 +32,7 @@ const Skills = () => {
                   width="20px"
                   height="20px"
                   className="img-con"
+                  alt="no-img"
                 />
                 <h4>CSS</h4>
               </span>
@@ -41,6 +43,7 @@ const Skills = () => {
                   width="20px"
                   height="20px"
                   className="img-con"
+                  alt="no-img"
                 />
                 <h4>JAVASCRIPT</h4>
               </div>
@@ -50,6 +53,7 @@ const Skills = () => {
                   width="20px"
                   height="20px"
                   className="img-con"
+                  alt="no-img"
                 />
                 <h4>React Js</h4>
               </div>
@@ -59,6 +63,7 @@ const Skills = () => {
                   width="20px"
                   height="20px"
                   className="img-con"
+                  alt="no-img"
                 />
                 <h4>NodeJs</h4>
               </div>
@@ -68,6 +73,7 @@ const Skills = () => {
                   width="20px"
                   height="20px"
                   className="img-con"
+                  alt="no-img"
                 />
                 <h4>MongoDB</h4>
               </div>
@@ -77,6 +83,7 @@ const Skills = () => {
                   width="20px"
                   height="20px"
                   className="img-con"
+                  alt="no-img"
                 />
                 <h4>Shopify & Shopify Plus</h4>
               </div>
