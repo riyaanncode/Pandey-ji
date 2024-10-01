@@ -1,0 +1,411 @@
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: row;  /* Align left and right containers in a row */
+  width: 100%;
+  height: 100vh;        /* Full viewport height */
+  /* background-color: red; */
+}
+
+/* Left container styling */
+.left-container {
+  /* background-color: pink; */
+  width: 50%;           /* Take 50% width on larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content section inside left container */
+.content-section {
+  width: 100%;
+}
+
+.content-data {
+box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+padding: 50px;
+margin: 20px;
+border: 2px solid black;
+text-align: center;
+background-color: #0c0434;
+}
+
+.download-cv {
+  display: inline-block; /* Ensure the button behaves like a button */
+  background-color: black;
+  color: #efcb0d;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  border: 2px solid black;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.download-cv:hover {
+  background-color: #efcb0d;
+  color: black;
+}
+
+/* Right container styling */
+.right-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Image container styling */
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Image styling */
+.profile-img {
+  /* box-shadow: 23px 9px 100px 40px blue; */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 11px solid #8142b9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add animation */
+  cursor: pointer;
+  animation-name: profileAnimation;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+}
+
+.profile-img:hover {
+  /* transform: scale(1.05);  Slight zoom effect on hover */ 
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); Add shadow effect */
+}
+
+/* Text styling */
+p {
+  font-size: 18px;
+  color: black;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column-reverse;  /* Stack containers vertically */
+      height: auto;                    /* Allow auto height for better mobile view */
+  }
+
+  .left-container, .right-container {
+      width: 100%;                    /* Make both containers full width */
+  }
+
+  .content-data {
+      padding: 20px;                   /* Adjust padding for smaller screens */
+      margin: 10px;
+  }
+
+  .download-cv {
+      font-size: 16px;                 /* Reduce button font size for smaller screens */
+      padding: 10px 20px;
+  }
+
+  .profile-img {
+      width: 200px;
+      height: 200px;
+      animation-name: profileAnimation;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+  }
+  .left-container{
+    margin-left: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+      width: 150px;         /* Smaller size on mobile */
+      height: 150px;        /* Maintain the circular shape */
+  }
+
+  .content-data {
+      margin: 10px;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 30px;      /* Reduce heading size on smaller screens */
+  }
+
+  .download-cv {
+      font-size: 14px;      /* Smaller button font on mobile */
+      padding: 10px 15px;
+  }
+
+  p {
+      font-size: 14px;      /* Smaller paragraph text */
+  }
+  .left-container{
+    margin-left: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width:387px){
+  .left-container{
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .title h1 {
+    font-size: 20px;
+    color: rgb(248, 247, 246);
+}
+}
+
+@keyframes profileAnimation {
+  
+  0%{
+    border-color:blue ;
+    transform: translate(0,0px);
+    /* 23px 9px 100px 40px */
+    box-shadow: 10px 10px 100px 50px blue;
+
+
+  }
+  25%{
+
+    border-color:rgb(239,244,11) ;
+    transform: translate(0,0px);
+    /* 23px 9px 100px 40px */
+    box-shadow: 10px 10px 100px 50px rgb(239,244,11); 
+  }
+  50%{
+    border-color:rgb(12,12,199) ;
+    transform: translate(0,10px);
+    /* 23px 9px 100px 40px */
+    box-shadow: 10px 10px 100px 50px rgb(12,12,199); 
+  }
+  75%{
+    border-color:rgb(130,217,180) ;
+    /* transform: translate(0,10px); */
+    /* 23px 9px 100px 40px */
+    box-shadow: 10px 10px 100px 50px rgb(130,217,180); 
+
+  }
+  100%{
+    border-color:rgb(50,55,205) ;
+    transform: translate(0,-10px);
+    /* 23px 9px 100px 40px */
+    box-shadow: 10px 10px 100px 50px rgb(50,55,205); 
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Left container styling */
+.left-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content section inside left container */
+.content-section {
+  width: 100%;
+}
+
+.content-data {
+  box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+  padding: 50px;
+  margin: 20px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: #0c0434;
+}
+
+.download-cv {
+  display: inline-block;
+  background-color: black;
+  color: #efcb0d;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  border: 2px solid black;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: #efcb0d;
+  color: black;
+}
+
+/* Right container styling */
+.right-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Image container styling */
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 11px solid #8142b9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .left-container, .right-container {
+    width: 100%;
+  }
+
+  .content-data {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .download-cv {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    animation-name: profileAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content-data {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .download-cv {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@keyframes profileAnimation {
+  0% {
+    border-color: blue;
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+  25% {
+    border-color: rgb(239, 244, 11);
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+  50% {
+    border-color: rgb(12, 12, 199);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+  75% {
+    border-color: rgb(130, 217, 180);
+    box-shadow: 10px 10px 100px 50px rgb(130, 217, 180);
+  }
+  100% {
+    border-color: rgb(50, 55, 205);
+    transform: translate(0, -10px);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+}
+

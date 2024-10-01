@@ -1,0 +1,73 @@
+.skills-section {
+  padding: 20px;
+}
+
+.skills-warper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-content {
+  text-align: center;
+}
+
+.skilss-boxs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* background-color: red; */
+  padding: 20px;
+}
+
+.skills-box1:hover {
+  scale: 0.9;
+}
+.skills-box1 {
+  /* scale: 0.9; */
+  font-size: 20px;
+  border-radius: 13px;
+  border: 3px solid white;
+  text-align: center;
+  align-items: center;
+  flex-basis: calc(33.33% - 40px); /* For 3 boxes per row on large screens */
+  margin-top: 35px;
+  background-color: #11111c;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.img-con {
+  box-shadow: 10px 10px 56px 0px #4bdd98;
+  border: 3px solid #f4c600;
+  border-radius: 5px;
+  /* border: 2px solid red; */
+  height: 53%;
+  width: 74%;
+}
+
+@media (max-width: 1024px) {
+  .skills-box1 {
+    flex-basis: calc(50% - 40px); /* 2 boxes per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-box1 {
+    flex-basis: calc(50% - 20px); /* Slightly tighter for smaller screens */
+    font-size: 18px;
+  }
+  .img-con {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-box1 {
+    flex-basis: 100%; /* Full width on small screens */
+    font-size: 16px;
+  }
+  .img-con {
+    width: 90%;
+  }
+}

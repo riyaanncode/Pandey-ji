@@ -1,0 +1,249 @@
+.nav-section {
+  display: flex;
+  justify-content: space-between; /* Space between title and navigation */
+  align-items: center;
+  padding: 20px;
+}
+
+.warper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between; /* Ensure title and nav are separated */
+}
+
+.title h1 {
+  /* font-size: 24px; */
+  color: rgb(248, 247, 246);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Move the nav section to the right */
+  width: 100%;
+}
+
+.navigation-bar {
+  display: flex;
+  list-style: none;
+  gap: 57px;
+  margin-left: auto; /* Push the nav items to the right */
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: wheat;
+  font-size: 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* .link-button:hover {
+  text-decoration: underline;
+} */
+
+.title{
+  width: 50%;
+}
+.link-button:hover{
+  border-bottom:  3px solid  rgb(230, 195, 138);
+}
+
+
+
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #333; */
+}
+
+.warper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h1 {
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: wheat;
+  cursor: pointer;
+}
+
+/* Hide the navigation menu by default on small screens */
+.navigation-bar {
+  display: flex;
+  list-style: none;
+  gap: 57px;
+  margin-left: auto;
+}
+
+.navigation-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: wheat;
+  font-size: 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  border-bottom: 3px solid rgb(230, 195, 138);
+}
+
+@media (max-width: 700px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navigation-bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 200px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .navigation-bar.open {
+    display: flex;
+  }
+
+  .navigation-bar ul {
+    flex-direction: column;
+  }
+
+  .link-button {
+    font-size: 18px;
+  }
+  ul{
+    z-index: 1;
+  }
+
+}
+
+@media (max-width:594px) {
+  .menu-icon.open {
+    left: 456px;
+    top: 26px;
+    position: absolute;
+}
+.navigation-bar.open{
+  z-index: 1;
+}
+  
+}
+@media (max-width:682px) {
+  .menu-icon.open{
+    left: 654px;
+    top: 20px;
+    position: absolute;
+}
+  }
+
+
+@media (max-width: 300px) {
+  .menu-icon.open {
+      left: 250px;
+      top: 1px;
+      position: absolute;
+  }
+  .navigation-bar.open{
+    z-index: 1;
+  }
+}
+@media (max-width: 404px) {
+  .menu-icon.open {
+      left: 347px;
+      top: 26px;
+      position: absolute;
+  }
+  .navigation-bar.open{
+    z-index: 1;
+  }
+}
+@media (max-width: 311px) {
+  .navigation-bar {
+      z-index: 0;
+      left: 113px;
+      display: none;
+      position: absolute;
+      top: 60px;
+      /* right: -1px; */
+      background-color: #333;
+      width: 200px;
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+      border-radius: 8px;
+  }
+  .navigation-bar.open{
+    z-index: 1;
+  }
+}
+@media (max-width: 525px) {
+  .navigation-bar {
+      left: 301px;
+      display: none;
+      position: absolute;
+      top: 70px;
+      /* right: 20px; */
+      background-color: #333;
+      width: 200px;
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+      border-radius: 8px;
+  }
+  h1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+.navigation-bar.open{
+  z-index: 1;
+}
+}
+@media (max-width: 205px) {
+  .menu-icon.open {
+    left: 147px;
+    top: 26px;
+    position: absolute;
+}
+  .title h1 {
+    font-size: 12px;
+    color: rgb(248, 247, 246);
+}
+}
+@media (max-width: 367px) {
+  .menu-icon.open {
+      left: 223px;
+      top: 26px;
+      position: absolute;
+  }
+}
+@media (max-width: 412px) {
+  .menu-icon.open {
+      left: 262px;
+      top: 20px;
+      position: absolute;
+  }
+}
